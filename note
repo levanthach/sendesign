@@ -1,0 +1,195 @@
+<nav>
+						<!-- Menu Toggle btn-->
+						<div class="menu-toggle">
+							<a href="javascript:;">
+								<img src="img/logo_baas.png" alt="" class="img-responsive">
+							</a>
+							<button type="button" id="menu-btn">
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+						</div>
+						<!-- Responsive Menu Structure-->
+						<ul id="respMenu" class="ace-responsive-menu" data-menu-style="horizontal">
+
+							<li class="d-none d-sm-block">
+								<a href="javascript:;">
+									<img src="img/logo_baas.png" alt="" class="img-responsive">
+								</a>
+							</li>
+
+							<li>
+								<a href="javascript:;">
+									<i class="fa fa-crop" aria-hidden="true"></i>
+									<span class="title">Trang Chủ</span>
+								</a>
+								<!-- Level Two-->
+								<ul>
+									<li>
+										<a href="javascript:;">
+											<i class="fa fa-amazon" aria-hidden="true"></i>
+											Giới Thiệu Chung					
+										</a>
+										<!-- Level Three-->
+										<ul>
+											<li>
+												<a href="javascript:;">
+													<i class="fa fa-diamond" aria-hidden="true"></i>Công nghệ từ Arconis
+												</a>
+												<a href="javascript:;">
+													<i class="fa fa-diamond" aria-hidden="true"></i>Công ty sở hữu
+												</a>
+												<!-- Level Four-->
+												<!-- <ul>
+													<li><a href="#"><i class="fa fa-trash" aria-hidden="true"></i>Sub Item Link 1</a></li>
+													<li><a href="#"><i class="fa fa-dashcube" aria-hidden="true"></i>Sub Item Link 2</a></li>
+													<li><a href="#"><i class="fa fa-dropbox" aria-hidden="true"></i>Sub Item Link 3</a></li>
+												</ul> -->
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="javascript:;">
+											<i class="fa fa-amazon" aria-hidden="true"></i>
+											Hình Thiết Kế				
+										</a>
+										<!-- Level Three-->
+										<ul>
+											<li>
+												<a href="javascript:;">
+													<i class="fa fa-diamond" aria-hidden="true"></i>Tổng quan dịch vụ
+												</a>
+												<a href="javascript:;">
+													<i class="fa fa-diamond" aria-hidden="true"></i>Các chương trình khuyến mãi
+												</a>
+											</li>
+										</ul>
+									</li>
+								</ul>	
+								
+							</li>
+							<li>
+								<a href="javascript:;">
+									<i class="fa fa-crop" aria-hidden="true"></i>
+									<span class="title">Dịch vụ</span>
+								</a>
+								<!-- Level Two-->
+								<ul>
+									<li>
+										<a href="javascript:;">
+											<i class="fa fa-amazon" aria-hidden="true"></i>
+											Dịch vụ Baas		
+										</a>
+									</li>
+									<li>
+										<a href="javascript:;">
+											<i class="fa fa-amazon" aria-hidden="true"></i>
+											Dịch vụ DRaaS		
+										</a>
+									</li>
+									<li>
+										<a href="javascript:;">
+											<i class="fa fa-amazon" aria-hidden="true"></i>
+											Dịch vụ Sync & Share			
+										</a>
+									</li>
+									<li>
+										<a href="javascript:;">
+											<i class="fa fa-amazon" aria-hidden="true"></i>
+											Dịch vụ Notary				
+										</a>
+									</li>
+									<li>
+										<a href="javascript:;">
+											<i class="fa fa-amazon" aria-hidden="true"></i>
+											Dịch vụ Khác				
+										</a>
+									</li> 
+
+								</ul>	
+							</li>
+							<li>
+								<a href="javascript:;">
+									<i class="fa fa-crop" aria-hidden="true"></i>
+									<span class="title">Hợp tác</span>
+								</a>
+								<!-- Level Two-->
+								<ul>
+									<li>
+										<a href="javascript:;">
+											<i class="fa fa-amazon" aria-hidden="true"></i>
+											Cá nhân	
+										</a>
+									</li>
+									<li>
+										<a href="javascript:;">
+											<i class="fa fa-amazon" aria-hidden="true"></i>
+											Doanh nghiệp		
+										</a>
+										<!-- Level Three-->
+										<ul>
+											<li>
+												<a href="javascript:;">
+													<i class="fa fa-diamond" aria-hidden="true"></i>Làm đối tác
+												</a>
+												<a href="javascript:;">
+													<i class="fa fa-diamond" aria-hidden="true"></i>Triển khai dịch vụ
+												</a>
+											</li>
+										</ul>
+									</li>
+								</ul>		
+							</li>
+							<li>
+								<a href="javascript:;">
+									<i class="fa fa-crop" aria-hidden="true"></i>
+									<span class="title">Support</span>
+								</a>
+								<!-- Level Two-->
+								<ul>
+									<li>
+										<a href="javascript:;">
+											<i class="fa fa-amazon" aria-hidden="true"></i>
+											Khách hàng		
+										</a>
+										<!-- Level Three-->
+										<ul>
+											<li>
+												<a href="javascript:;">
+													<i class="fa fa-diamond" aria-hidden="true"></i>Tài liệu
+												</a>
+												<a href="javascript:;">
+													<i class="fa fa-diamond" aria-hidden="true"></i>Cập nhật sản phẩm
+												</a>
+												<a href="javascript:;">
+													<i class="fa fa-diamond" aria-hidden="true"></i>Video
+												</a>
+												<a href="javascript:;">
+													<i class="fa fa-diamond" aria-hidden="true"></i>Knowledge Base (KB)
+												</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="javascript:;">
+											<i class="fa fa-amazon" aria-hidden="true"></i>
+											Đối tác
+										</a>
+									</li>
+								</ul>		
+							</li>
+							<li>
+								<a href="javascript:;">
+									<i class="fa fa-crop" aria-hidden="true"></i>
+									<span class="title">Tin tức</span>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<i class="fa fa-crop" aria-hidden="true"></i>
+									<span class="title">Liên Hệ</span>
+								</a>
+							</li>
+						</ul>
+					</nav>

@@ -1,0 +1,665 @@
+body {
+	overflow-x: hidden;
+	
+}
+
+$main-color: #000000;
+$color-white: #fff;
+$color-red: #8d1a0c;
+$color-white:  #ffffff;
+$color-xam: #e5e5e5;;
+
+::selection{
+	background:$color-red!important; 
+	color:$color-white!important;
+}
+// font chu
+@font-face {
+	font-family: Libe;
+	src:url('../../lib/fonts/LiebeDoris/LiebeFonts_Liebe.Doris.otf');
+	font-weight: 400;
+	font-style: normal;
+	
+}
+
+@font-face {
+	font-family: Gotham;
+	src:url('../../lib/fonts/GotHam/VNF-Gotham Book.ttf');
+	font-weight: 400;
+	font-style: normal;
+
+}
+@mixin title{ 
+	font-family: Libe;
+	font-size: 50px;
+	color:$color-white;
+	&::after{
+		content: "";
+	    display: block;
+	    background-color: $color-red;
+	    width: 30px;
+	    height: 2px;
+	    margin: 15px auto 0;
+	};
+}
+
+@mixin wp_content_button {
+	.cta-btn{
+			.cl-effect-18{
+				color: $color-xam!important;
+				font-size: 15px;
+				text-transform: uppercase;
+				position: relative;
+				padding: 15px;
+				transition: color .3s;
+				text-decoration: none;
+				&:hover{
+					&::before{
+						width: 50%!important;
+						-webkit-transform: rotate(-45deg);
+					    -moz-transform: rotate(-45deg);
+					    transform: rotate(-45deg);
+					    opacity: 0.7;
+					    text-align: center;
+					}
+					&::after{
+						width: 50%!important;
+						-webkit-transform: rotate(45deg);
+					    -moz-transform: rotate(45deg);
+					    transform: rotate(45deg);
+					    opacity: 0.7;
+					    text-align: center;
+					}	
+				}
+				&::before{
+					content:'';
+					position: absolute;
+					width: 100%;
+					left: 0%;
+					top: 50%;
+					height: 2px;
+					margin-top: -1px;
+					background: $color-xam;
+					transition: transform .3s,opacity .3s;
+					-webkit-transform: translateY(-20px); 
+					transform: translateY(-20px);
+	
+				}
+				&::after{
+
+					content:'';
+					position: absolute;
+					width: 100%;
+					left: 0%;
+					top: 50%;
+					height: 2px;
+					margin-top: -1px;
+					background: $color-xam;
+					-webkit-transform: translateY(20px); 
+					transform: translateY(20px);
+					transition: transform .3s,opacity .3s;
+				}
+			}
+		}
+}
+
+#header{
+	.navbar{
+		position: fixed;
+		top: 0;
+		left:0;
+		min-width: 100%;
+		z-index: 999999;
+		.navbar-brand{
+			img{
+				max-width: 100%;
+				max-height: 60px;
+			}
+		}
+	}
+	.navbar-collapse{
+		.navbar-nav{
+			.nav-item{
+				.nav-link{
+					color:$main-color!important;
+					font-weight: bold;
+					font-size: 12px;
+					font-family: 'raleway';
+					text-transform: uppercase;
+				}
+			}
+		}
+	}
+	
+}
+
+#demo {
+	margin-top: 83px;
+	.carousel-inner{
+		.carousel-item{
+			img{
+				width: 100%;
+				height: 500px;
+				object-fit: cover;
+			}
+		}
+	}
+} //end demo
+.about{
+	padding: 10px 0 100px 0;
+	text-align: center;
+	background:$main-color;
+	.section-title{
+		span{
+			@include title;
+		}
+	}
+	.title-content{
+		p{
+		 	font-size: 30px;
+		 	font-family: Gotham;
+		 	color:$color-red;
+		}
+	}
+	.main-content{
+		.wpb_wrapper{
+			max-width: 51em;
+			margin:auto;
+			p{
+				color:$color-white;
+			}
+		}
+	}
+	.wpb_content_element{
+		padding:30px 0 10px 0;
+		@include wp_content_button;
+		
+	}
+} //end about
+.main-quote {
+	background: url('../../img/bg-about.png') no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	padding: 190px 0;
+	
+	.ut-parallax-quote-title{
+		margin-bottom:0!important;
+		max-width: 54%;
+		margin:auto;
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 30px;
+		line-height: 40px;
+		color:$color-white;
+		ins{
+			background-color: transparent;
+    		color: $color-red;
+    		text-decoration: none;
+		}
+	}
+	.ut-parallax-quote-name{
+		display: block;
+	    font-size: 12px;
+	    margin-bottom: 0;
+	    margin-top: 20px;
+	}
+
+}// qoute
+
+.our-services{
+	background:$main-color;
+	padding: 120px 0 60px 0;
+	text-align: center;
+	.section-title{
+		span{
+			@include title;
+		}
+	}
+	.lead{
+		p{
+			font-family: "Raleway";
+		    font-weight: 400;
+		    font-size: 20px;
+		    line-height: 30px;
+		    color:#6f6a6a;
+		    padding-bottom: 45px;
+		   	ins{
+		   		color:$color-white!important;
+		   		opacity: 0.9;
+		   		text-decoration: none;
+		   	}
+		}
+	}
+	.services-image{
+		img {
+			height: auto;
+		    max-width: 100%;
+		    width: auto\9;
+		    -ms-interpolation-mode: bicubic;
+		    image-rendering: -webkit-optimize-contrast;
+		}
+	}
+	.services-list-item{
+		.wpb_wrapper{
+			margin-top: 35px;
+			ul{
+				li{
+					text-align: center;
+					width: 20%;
+					display: inline-block;
+    				float: left;
+    				list-style-type: none;
+    				color:$color-white;
+    				text-transform: uppercase;
+    				font-weight:700;
+    				padding-bottom: 100px;
+					img{
+						max-width: 100%;
+					}
+				}
+			}
+		}
+	}
+	.video-services-iframe{
+		embed{
+			max-width: 100%;
+		}
+	}
+} //end our-services
+.our-work{
+	background:$main-color;
+	text-align: center;
+	.section-title{
+		span{
+			@include title;
+		}
+	}
+	.lead{
+		max-width: 65%;
+		margin:auto;
+		font-family: "Raleway";
+	    font-weight: 400;
+	    font-size: 20px;
+	    line-height: 30px;
+	    color:#6f6a6a;
+	    padding-bottom: 45px;
+	   	ins{
+	   		color:$color-white!important;
+	   		opacity: 0.9;
+	   		text-decoration: none;
+	   	}
+	}
+
+} //end work
+.galery-image{
+	margin-left: 0!important;
+	background:$main-color;
+	width: 100%;
+	.layout-hover{
+		position: relative;
+		margin-bottom: 30px;
+		overflow: hidden;
+		img{
+			max-width: 100%;
+			position: relative;
+		 	transition: transform .5s ease;
+		}
+		&::after{
+			position: absolute;
+			content: '';
+			width: 100%;
+			height: 100%;
+			background:$main-color;
+			transition: 0.5s;
+			z-index: 999;
+			top: 0;
+			left:0;
+			visibility: hidden;
+			opacity: 0;
+			transition: all 0.5s;
+		}
+		.text-hover{
+			position: absolute;
+			z-index: 999;
+			top: 7em;
+    		left: 2em;
+    		visibility: hidden;
+    		opacity: 0;
+    		transition: all 0.5s;
+			.title{
+				font-family:Libe;
+				color: $color-white;
+				font-size: 22px;
+				position: relative;
+				&::after{
+					content: '';
+					position: absolute;
+					width: 100px;
+					height: 1px;
+					top: 100%;
+				    margin-top: 5px;
+				    left: 0;
+					background-color:#777070;
+
+				}
+			}
+			.sub-title{
+				font-weight: initial;
+			    color: #777070;
+			    font-size: 16px;
+			}
+		}
+		&:hover{
+			img{
+				transform: scale(1.2);
+			}
+			cursor: pointer;
+			transition: all 0.5s;
+			&::after{
+				visibility: visible;
+				opacity: 0.5;
+			}
+			.text-hover{
+				visibility: visible;
+				opacity: 1;
+				z-index: 9999;
+			}
+		}
+	}
+	.list-button{
+		margin-bottom: 0!important;
+		max-width: 600px;
+		margin: auto;
+		.active{
+			list-style-type: none;
+			float: left;
+			display: inline-block;
+			padding: 6px 12px;
+			border: 1px solid #151515!important;
+		    background-color:#151515;
+		    color: $color-white!important;
+		    margin: 0 20px 20px 0;		
+		    font-size: 12px;
+		}
+		.item{
+			list-style-type: none;
+			float: left;
+			display: inline-block;
+			padding: 6px 12px;
+		    border: 1px solid #7b7676;
+		    color: $color-red;
+		    margin: 0 20px 20px 0;		
+		    font-size: 13px;
+		    transition: all 0.5s;
+		    &:hover{
+		    	cursor: pointer;
+				border: 1px solid #151515;
+
+		    }
+		}
+	}
+
+	
+} //end galery-image
+.service-continue{
+	background:$main-color;
+	padding: 0 0 40px 0;
+	.video-services-iframe{
+		embed{
+			max-width: 100%;
+		}
+	}
+	.wpb_content_element{
+		padding:30px 0 10px 0;
+		@include wp_content_button;
+	}
+
+}  //end services-continue
+
+.our-clients{
+	padding: 133px 0 100px 0;
+	text-align: center;
+	.section-title{
+		span {
+			@include title;
+			color:$main-color;
+		}
+	}
+	.client-img{
+		img{
+			max-width: 100%;
+			width: 20%;
+		}
+	}
+} //end our-clients
+
+.our-team{
+	padding: 133px 0 40px 0;
+	background:$main-color;
+	text-align: center;
+	.section-title{
+		@include title;
+
+	}
+	.lead{
+		p{
+			font-family: "Raleway";
+		    font-weight: 400;
+		    font-size: 20px;
+		    line-height: 30px;
+		    color:#6f6a6a;
+		    padding-bottom: 45px;
+		   	ins{
+		   		color:$color-white!important;
+		   		opacity: 0.9;
+		   		text-decoration: none;
+		   	}
+		}
+	}
+	.ut-bkly-qt-slide{
+		max-width: 82%;
+		margin:auto;
+		text-align: left;
+		.bkly-testimonials-style2{
+			.bklyn-testimonials-avatar{
+				img{
+					border-radius: 50%;
+					object-fit: cover;
+				}
+				
+			}
+			.bklyn-testimonials-quote{
+				margin-left: 40px;
+				height: 26em;
+				p{
+					color: #464646;
+				    font-family: Droid Serif;
+				    font-weight: 500;
+				    font-style: normal;
+				    font-size: 19px;
+				    line-height: 31px;
+				}
+				.bklyn-about-testimonials-author{
+					.bklyn-testimonials-icon-wrap{
+						.bklyn-testimonials-icon{
+							img{
+								width: 32px;
+								height: 32px;
+								display: inline;
+							}
+						}
+					}
+					.bklyn-testimonials-author-wrap{
+						position: relative;
+					    top: -31px;
+					    right: -50px;
+						.bklyn-testimonials-author{
+							font-family: Libe;
+							color:$color-white;
+							font-size: 23px;
+						}
+						.bklyn-testimonials-origin{
+							font-size: 14px;
+							font-weight: normal;
+							color:$color-red;
+						}
+					}
+				}
+			}
+		}
+		
+		.wpb_content_element{
+			padding: 30px 0;
+			@include wp_content_button;
+		}
+
+	}
+	
+} //end our-team
+.we-are-form{
+	text-align: center;
+	background: url('../../img/contact-bg.jpg') left center no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	transform: translate3d(0px, 0px, 0px);
+	padding: 137px 0 200px 0;
+	.section-title{
+		@include title;
+		color:$color-white;
+	}
+	.lead{
+		p{
+			font-family: "Raleway";
+		    font-weight: 400;
+		    font-size: 20px;
+		    line-height: 30px;
+		    color:$color-white;
+		    padding-bottom: 45px;
+		   	ins{
+		   		color:$color-red!important;
+		   		opacity: 0.9;
+		   		text-decoration: none;
+		   	}
+		}
+	}
+	.contact-form-wrap{
+		text-align: left;
+		.contact__info{
+			.bg-contact__info{
+				background: rgba(0,0,0,0.25);
+				padding: 40px 40px 135px 40px;
+				h3{
+					font-family: Libe;
+					font-size: 24px;
+					padding-bottom: 15px;
+					color:$color-white;
+				}
+				p{
+					color:$color-white;
+					font-family: Gotham;
+					margin-bottom: 20px;
+					font-size: 14px;
+				}
+			}
+		}
+		.contact__form{
+			.bg-contact__form{
+				background: rgba(0,0,0,0.25);
+				padding: 40px;
+				h3{
+					font-family: Libe;
+					font-size: 24px;
+					padding-bottom: 15px;
+					color:$color-white;
+				}
+				p{
+					color:$color-white;
+					font-family: Gotham;
+					font-size: 14px;
+					label{
+						width: 100%;
+						.wpcf7-form-control-wrap{
+							.wpcf7-form-control{
+							    border: 1px solid transparent;
+								padding: 7px;
+							    outline: none;
+							    color: #FFFFFF;
+							    margin: 0;
+							    min-width: 100%;
+							    display: block;
+							    vertical-align: baseline;
+							    vertical-align: middle;
+							    -webkit-transition: background 0.40s ease-in-out;
+							    -moz-transition: background 0.40s ease-in-out;
+							    -o-transition: background 0.40s ease-in-out;
+							    transition: background 0.40s ease-in-out;
+							    -webkit-box-sizing: border-box;
+							    -moz-box-sizing: border-box;
+							    box-sizing: border-box;
+							    -webkit-background-clip: padding;
+							    -moz-background-clip: padding;
+							    background-clip: padding-box;
+							    background: rgb(0, 0, 0);
+							    background: rgba(0, 0, 0, 0.35);
+							    -webkit-border-radius: 0;
+							    -moz-border-radius: 0;
+							    border-radius: 0;
+							}
+						}
+					}
+					
+				}
+			}
+		}
+	}
+
+} //end we-are-form
+footer{
+	background: $main-color;
+	padding: 40px 0;
+	.copyright{
+		text-align: center;
+		text-transform: uppercase;
+		color: #DBDBDB;
+		font-weight: bold;
+		font-size: 11px;
+		display: block;
+		padding: 0;
+		margin:0;
+		line-height: 150%;
+	}
+}
+
+//custom owl-nav
+.owl-nav{
+	.owl-prev{
+		outline: none;
+		span{
+			font-size: 10em!important;
+		    color: $color-white;
+		    font-weight: 100;
+		    position: absolute;
+		    left: 0;
+		    bottom: 300px;
+		}
+	}
+	.owl-next{
+		outline: none;
+		span{
+			font-size: 10em!important;
+		    color: $color-white;
+		    position: absolute;
+		    font-weight: 100;
+		    right: 0;
+		    bottom: 300px;
+		}
+	}
+}
+.owl-theme .owl-nav [class*=owl-]:hover {
+	background: none!important;
+}
+@media (min-width: 992px) {
+	.navbar-expand-lg .navbar-nav {
+		margin-left: 700px;
+	}
+}

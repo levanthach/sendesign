@@ -69,11 +69,15 @@ body {
       margin-top: 20px;
       border: 2px solid white;
       width: 110px;
-      background: #000000; }
+      background: #000000;
+      transition: all 0.5s; }
+      .slider .text-slider .hero-btn-holder:hover {
+        background-color: #585353c9;
+        transition: all 0.5s; }
       .slider .text-slider .hero-btn-holder a {
         font-weight: boild;
         color: #ffffff;
-        padding: 0.8em 1em;
+        padding: 1em;
         font-size: 12px;
         font-family: sans-serif;
         text-align: center;
@@ -127,21 +131,24 @@ body {
       padding: 15px;
       transition: color .3s;
       text-decoration: none;
-      font-family: 'Gotham Book'; }
+      font-family: 'Gotham Book';
+      transition: all 0.5s; }
       .about .wpb_content_element .cta-btn .cl-effect-18:hover::before {
         width: 50% !important;
         -webkit-transform: rotate(-45deg);
         -moz-transform: rotate(-45deg);
         transform: rotate(-45deg);
         opacity: 0.7;
-        left: 25%; }
+        left: 25%;
+        transition: all 0.5s; }
       .about .wpb_content_element .cta-btn .cl-effect-18:hover::after {
         width: 50% !important;
         -webkit-transform: rotate(45deg);
         -moz-transform: rotate(45deg);
         transform: rotate(45deg);
         opacity: 0.7;
-        left: 25%; }
+        left: 25%;
+        transition: all 0.5s; }
       .about .wpb_content_element .cta-btn .cl-effect-18::before {
         content: '';
         position: absolute;
@@ -403,21 +410,24 @@ body {
       padding: 15px;
       transition: color .3s;
       text-decoration: none;
-      font-family: 'Gotham Book'; }
+      font-family: 'Gotham Book';
+      transition: all 0.5s; }
       .service-continue .wpb_content_element .cta-btn .cl-effect-18:hover::before {
         width: 50% !important;
         -webkit-transform: rotate(-45deg);
         -moz-transform: rotate(-45deg);
         transform: rotate(-45deg);
         opacity: 0.7;
-        left: 25%; }
+        left: 25%;
+        transition: all 0.5s; }
       .service-continue .wpb_content_element .cta-btn .cl-effect-18:hover::after {
         width: 50% !important;
         -webkit-transform: rotate(45deg);
         -moz-transform: rotate(45deg);
         transform: rotate(45deg);
         opacity: 0.7;
-        left: 25%; }
+        left: 25%;
+        transition: all 0.5s; }
       .service-continue .wpb_content_element .cta-btn .cl-effect-18::before {
         content: '';
         position: absolute;
@@ -559,21 +569,24 @@ body {
         padding: 15px;
         transition: color .3s;
         text-decoration: none;
-        font-family: 'Gotham Book'; }
+        font-family: 'Gotham Book';
+        transition: all 0.5s; }
         .our-team .ut-bkly-qt-slide .wpb_content_element .cta-btn .cl-effect-18:hover::before {
           width: 50% !important;
           -webkit-transform: rotate(-45deg);
           -moz-transform: rotate(-45deg);
           transform: rotate(-45deg);
           opacity: 0.7;
-          left: 25%; }
+          left: 25%;
+          transition: all 0.5s; }
         .our-team .ut-bkly-qt-slide .wpb_content_element .cta-btn .cl-effect-18:hover::after {
           width: 50% !important;
           -webkit-transform: rotate(45deg);
           -moz-transform: rotate(45deg);
           transform: rotate(45deg);
           opacity: 0.7;
-          left: 25%; }
+          left: 25%;
+          transition: all 0.5s; }
         .our-team .ut-bkly-qt-slide .wpb_content_element .cta-btn .cl-effect-18::before {
           content: '';
           position: absolute;

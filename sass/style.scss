@@ -23,7 +23,7 @@ $color-xam: #e5e5e5;;
 }
 
 @font-face {
-	font-family: Gotham;
+	font-family: Gotham!important;
 	src:url('../../lib/fonts/GotHam/VNF-Gotham Book.ttf');
 	font-weight: 400;
 	font-style: normal;
@@ -42,7 +42,32 @@ $color-xam: #e5e5e5;;
 	    margin: 15px auto 0;
 	};
 }
+// kích cỡ responsive mobile
+/* Mixin */
+/* Set các giá trị với màn hình tương ứng */
+$mobile-width: 480px; 
+$tablet-width: 768px; 
+$desktop-width: 1024px;  
 
+@mixin mobile { @media (max-width: #{$mobile-width + 287px}) {  //max-width: 767px
+  @content;   
+ } 
+}  
+@mixin iphone5 { @media (max-width: 320px) {  //max-width: 320px
+  @content;   
+ } 
+}  
+
+@mixin tablet { @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {       
+  // min-width 768px - 1023px
+   @content;   
+ } 
+}  
+
+@mixin desktop { @media (min-width: #{$desktop-width}) and (max-width: 1365px) {    //min-width:1024px
+  @content;  
+ } 
+}
 @mixin wp_content_button {
 	.cta-btn{
 			.cl-effect-18{
@@ -53,6 +78,7 @@ $color-xam: #e5e5e5;;
 				padding: 15px;
 				transition: color .3s;
 				text-decoration: none;
+				font-family: Gotham;
 				&:hover{
 					&::before{
 						width: 50%!important;
@@ -547,7 +573,8 @@ $color-xam: #e5e5e5;;
 		.contact__info{
 			.bg-contact__info{
 				background: rgba(0,0,0,0.25);
-				padding: 40px 40px 135px 40px;
+				padding: 40px;
+				height: 580px;
 				h3{
 					font-family: Libe;
 					font-size: 24px;
@@ -556,7 +583,7 @@ $color-xam: #e5e5e5;;
 				}
 				p{
 					color:$color-white;
-					font-family: Gotham;
+					font-family: !important;
 					margin-bottom: 20px;
 					font-size: 14px;
 				}
@@ -566,6 +593,7 @@ $color-xam: #e5e5e5;;
 			.bg-contact__form{
 				background: rgba(0,0,0,0.25);
 				padding: 40px;
+				height: 580px;
 				h3{
 					font-family: Libe;
 					font-size: 24px;
@@ -574,7 +602,7 @@ $color-xam: #e5e5e5;;
 				}
 				p{
 					color:$color-white;
-					font-family: Gotham;
+					font-family: Gotham!important;
 					font-size: 14px;
 					label{
 						width: 100%;
@@ -660,6 +688,7 @@ footer{
 }
 @media (min-width: 992px) {
 	.navbar-expand-lg .navbar-nav {
-		margin-left: 700px;
+		position: absolute;
+    	left: 65%;
 	}
 }

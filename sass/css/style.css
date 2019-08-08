@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   overflow-x: hidden; }
 
@@ -11,10 +12,12 @@ body {
   font-weight: 400;
   font-style: normal; }
 @font-face {
-  font-family: Gotham;
+  font-family: Gotham !important;
   src: url("../../lib/fonts/GotHam/VNF-Gotham Book.ttf");
   font-weight: 400;
   font-style: normal; }
+/* Mixin */
+/* Set các giá trị với màn hình tương ứng */
 #header .navbar {
   position: fixed;
   top: 0;
@@ -71,7 +74,8 @@ body {
       position: relative;
       padding: 15px;
       transition: color .3s;
-      text-decoration: none; }
+      text-decoration: none;
+      font-family: Gotham; }
       .about .wpb_content_element .cta-btn .cl-effect-18:hover::before {
         width: 50% !important;
         -webkit-transform: rotate(-45deg);
@@ -317,7 +321,8 @@ body {
       position: relative;
       padding: 15px;
       transition: color .3s;
-      text-decoration: none; }
+      text-decoration: none;
+      font-family: Gotham; }
       .service-continue .wpb_content_element .cta-btn .cl-effect-18:hover::before {
         width: 50% !important;
         -webkit-transform: rotate(-45deg);
@@ -444,7 +449,8 @@ body {
         position: relative;
         padding: 15px;
         transition: color .3s;
-        text-decoration: none; }
+        text-decoration: none;
+        font-family: Gotham; }
         .our-team .ut-bkly-qt-slide .wpb_content_element .cta-btn .cl-effect-18:hover::before {
           width: 50% !important;
           -webkit-transform: rotate(-45deg);
@@ -518,7 +524,8 @@ body {
     text-align: left; }
     .we-are-form .contact-form-wrap .contact__info .bg-contact__info {
       background: rgba(0, 0, 0, 0.25);
-      padding: 40px 40px 135px 40px; }
+      padding: 40px;
+      height: 580px; }
       .we-are-form .contact-form-wrap .contact__info .bg-contact__info h3 {
         font-family: Libe;
         font-size: 24px;
@@ -526,12 +533,13 @@ body {
         color: #ffffff; }
       .we-are-form .contact-form-wrap .contact__info .bg-contact__info p {
         color: #ffffff;
-        font-family: Gotham;
+        font-family: !important;
         margin-bottom: 20px;
         font-size: 14px; }
     .we-are-form .contact-form-wrap .contact__form .bg-contact__form {
       background: rgba(0, 0, 0, 0.25);
-      padding: 40px; }
+      padding: 40px;
+      height: 580px; }
       .we-are-form .contact-form-wrap .contact__form .bg-contact__form h3 {
         font-family: Libe;
         font-size: 24px;
@@ -539,7 +547,7 @@ body {
         color: #ffffff; }
       .we-are-form .contact-form-wrap .contact__form .bg-contact__form p {
         color: #ffffff;
-        font-family: Gotham;
+        font-family: Gotham !important;
         font-size: 14px; }
         .we-are-form .contact-form-wrap .contact__form .bg-contact__form p label {
           width: 100%; }
@@ -607,6 +615,7 @@ footer {
 
 @media (min-width: 992px) {
   .navbar-expand-lg .navbar-nav {
-    margin-left: 700px; } }
+    position: absolute;
+    left: 65%; } }
 
 /*# sourceMappingURL=style.css.map */

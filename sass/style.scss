@@ -190,6 +190,7 @@ $desktop-width: 1024px;
 	.main-content{
 		.wpb_wrapper{
 			max-width: 51em;
+			font-family: 'Gotham Book';
 			margin:auto;
 			p{
 				color:$color-white;
@@ -583,7 +584,7 @@ $desktop-width: 1024px;
 				}
 				p{
 					color:$color-white;
-					font-family: !important;
+					font-family: 'Gotham Book'!important;
 					margin-bottom: 20px;
 					font-size: 14px;
 				}

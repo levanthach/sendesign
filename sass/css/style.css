@@ -57,6 +57,7 @@ body {
     color: #8d1a0c; }
   .about .main-content .wpb_wrapper {
     max-width: 51em;
+    font-family: 'Gotham Book';
     margin: auto; }
     .about .main-content .wpb_wrapper p {
       color: #ffffff; }
@@ -528,7 +529,7 @@ body {
         color: #ffffff; }
       .we-are-form .contact-form-wrap .contact__info .bg-contact__info p {
         color: #ffffff;
-        font-family: !important;
+        font-family: "Gotham Book" !important;
         margin-bottom: 20px;
         font-size: 14px; }
     .we-are-form .contact-form-wrap .contact__form .bg-contact__form {

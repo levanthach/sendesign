@@ -117,6 +117,7 @@ body {
   background-size: cover;
   padding: 190px 0; }
   .main-quote .ut-parallax-quote-title {
+    font-family: 'Gotham Book';
     margin-bottom: 0 !important;
     max-width: 54%;
     margin: auto;
@@ -170,6 +171,7 @@ body {
   .our-services .services-list-item .wpb_wrapper {
     margin-top: 35px; }
     .our-services .services-list-item .wpb_wrapper ul li {
+      font-family: 'Gotham Book';
       text-align: center;
       width: 20%;
       display: inline-block;
@@ -288,8 +290,10 @@ body {
       background-color: #151515;
       color: #ffffff !important;
       margin: 0 20px 20px 0;
-      font-size: 12px; }
+      font-size: 12px;
+      font-family: 'Gotham Book'; }
     .galery-image .list-button .item {
+      font-family: 'Gotham Book';
       list-style-type: none;
       float: left;
       display: inline-block;
@@ -426,6 +430,7 @@ body {
         display: inline; }
       .our-team .ut-bkly-qt-slide .bkly-testimonials-style2 .bklyn-testimonials-quote .bklyn-about-testimonials-author .bklyn-testimonials-author-wrap {
         position: relative;
+        font-family: 'Gotham Book';
         top: -31px;
         right: -50px; }
         .our-team .ut-bkly-qt-slide .bkly-testimonials-style2 .bklyn-testimonials-quote .bklyn-about-testimonials-author .bklyn-testimonials-author-wrap .bklyn-testimonials-author {

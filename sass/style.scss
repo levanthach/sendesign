@@ -210,6 +210,7 @@ $desktop-width: 1024px;
 	padding: 190px 0;
 	
 	.ut-parallax-quote-title{
+		font-family: 'Gotham Book';
 		margin-bottom:0!important;
 		max-width: 54%;
 		margin:auto;
@@ -271,6 +272,7 @@ $desktop-width: 1024px;
 			margin-top: 35px;
 			ul{
 				li{
+					font-family: 'Gotham Book';
 					text-align: center;
 					width: 20%;
 					display: inline-block;
@@ -407,8 +409,10 @@ $desktop-width: 1024px;
 		    color: $color-white!important;
 		    margin: 0 20px 20px 0;		
 		    font-size: 12px;
+		    font-family: 'Gotham Book';
 		}
 		.item{
+			font-family: 'Gotham Book';
 			list-style-type: none;
 			float: left;
 			display: inline-block;
@@ -518,6 +522,7 @@ $desktop-width: 1024px;
 					}
 					.bklyn-testimonials-author-wrap{
 						position: relative;
+						font-family: 'Gotham Book';
 					    top: -31px;
 					    right: -50px;
 						.bklyn-testimonials-author{

@@ -35,7 +35,7 @@ body {
     position: absolute;
     z-index: 10;
     left: 10%;
-    top: 30%; }
+    top: 40%; }
     .slider .text-slider .hero-description {
       font-family: Gotham;
       font-size: 12px;
@@ -79,6 +79,9 @@ body {
         text-align: center;
         display: inline-block;
         text-decoration: none; }
+  .slider .owl-slider .item img {
+    height: 635px;
+    object-fit: cover; }
 
 .about {
   padding: 10px 0 100px 0;

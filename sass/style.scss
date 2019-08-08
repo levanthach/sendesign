@@ -169,7 +169,7 @@ $desktop-width: 1024px;
 		position: absolute;
 		z-index: 10;
 		left:10%;
-		top:30%;
+		top:40%;
 		.hero-description{
 			font-family: Gotham;
 			font-size: 12px;
@@ -220,8 +220,16 @@ $desktop-width: 1024px;
 				text-decoration: none;
 			}
 		}
+	} //end text-slier
+	.owl-slider{
+		.item{
+			img{
+				height: 635px;
+				object-fit: cover;
+			}
+		}
 	}
-}
+} //end slider
 .about{
 	padding: 10px 0 100px 0;
 	text-align: center;

@@ -33,7 +33,7 @@ body {
   position: relative; }
   .slider .text-slider {
     position: absolute;
-    z-index: 9999999;
+    z-index: 10;
     left: 10%;
     top: 30%; }
     .slider .text-slider .hero-description {

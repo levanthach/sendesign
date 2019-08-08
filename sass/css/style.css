@@ -277,7 +277,8 @@ body {
         font-family: Libe;
         color: #ffffff;
         font-size: 22px;
-        position: relative; }
+        position: relative;
+        margin-right: 43px; }
         .galery-image .layout-hover .text-hover .title::after {
           content: '';
           position: absolute;
@@ -307,11 +308,11 @@ body {
     margin-bottom: 0 !important;
     max-width: 600px;
     margin: auto; }
-    .galery-image .list-button .active {
+    .galery-image .list-button .active a {
       border: 1px solid #151515 !important;
       background-color: #151515;
       color: #ffffff !important; }
-    .galery-image .list-button .item {
+    .galery-image .list-button .item a {
       font-family: 'Gotham Book';
       list-style-type: none;
       float: left;
@@ -322,12 +323,13 @@ body {
       margin: 0 13px 20px 0;
       line-height: 100%;
       font-size: 13px;
-      transition: all 0.5s; }
+      transition: all 0.5s;
+      text-decoration: none; }
       @media (max-width: 767px) {
-        .galery-image .list-button .item {
+        .galery-image .list-button .item a {
           font-size: 12px;
           margin: 0 10px 20px 0; } }
-      .galery-image .list-button .item:hover {
+      .galery-image .list-button .item a:hover {
         cursor: pointer;
         border: 1px solid #151515; }
 
@@ -659,7 +661,7 @@ footer {
 .owl-nav .owl-prev {
   outline: none; }
   .owl-nav .owl-prev span {
-    font-size: 10em !important;
+    font-size: 7.5em !important;
     color: #ffffff;
     font-weight: 100;
     position: absolute;
@@ -672,7 +674,7 @@ footer {
 .owl-nav .owl-next {
   outline: none; }
   .owl-nav .owl-next span {
-    font-size: 10em !important;
+    font-size: 7.5em !important;
     color: #ffffff;
     position: absolute;
     font-weight: 100;
@@ -685,6 +687,26 @@ footer {
 
 .owl-theme .owl-nav [class*=owl-]:hover {
   background: none !important; }
+
+a#go-top {
+  background: #8b8c82;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 9999999; }
+  a#go-top i {
+    color: #ffffff; }
+    a#go-top i::before {
+      content: "\f102";
+      font-size: 19px;
+      width: 100%;
+      position: absolute;
+      left: 0;
+      top: 25%;
+      text-align: center; }
 
 @media (min-width: 992px) {
   .navbar-expand-lg .navbar-nav {

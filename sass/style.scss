@@ -385,6 +385,7 @@ $desktop-width: 1024px;
 				color: $color-white;
 				font-size: 22px;
 				position: relative;
+				margin-right: 43px;
 				&::after{
 					content: '';
 					position: absolute;
@@ -425,31 +426,36 @@ $desktop-width: 1024px;
 		max-width: 600px;
 		margin: auto;
 		.active{
-			border: 1px solid #151515!important;
-		    background-color:#151515;
-		    color: $color-white!important;
+			a{
+				border: 1px solid #151515!important;
+			    background-color:#151515;
+			    color: $color-white!important;
+			}
 		}
 		.item{
-			font-family: 'Gotham Book';
-			list-style-type: none;
-			float: left;
-			display: inline-block;
-			padding: 10px;
-		    border: 1px solid #7b7676;
-		    color: $color-red;
-		    margin: 0 13px 20px 0;
-		    line-height: 100%;
-		    font-size: 13px;
-		    transition: all 0.5s;
-		    @include mobile {
-				font-size: 12px;
-				margin: 0 10px 20px 0;
-		    }
-		    &:hover{
-		    	cursor: pointer;
-				border: 1px solid #151515;
+			a{
+				font-family: 'Gotham Book';
+				list-style-type: none;
+				float: left;
+				display: inline-block;
+				padding: 10px;
+			    border: 1px solid #7b7676;
+			    color: $color-red;
+			    margin: 0 13px 20px 0;
+			    line-height: 100%;
+			    font-size: 13px;
+			    transition: all 0.5s;
+			   	text-decoration: none;
+			    @include mobile {
+					font-size: 12px;
+					margin: 0 10px 20px 0;
+			    }
+			    &:hover{
+			    	cursor: pointer;
+					border: 1px solid #151515;
 
-		    }
+			    }
+			}
 		}
 	}
 
@@ -737,7 +743,7 @@ footer{
 	.owl-prev{
 		outline: none;
 		span{
-			font-size: 10em!important;
+			font-size: 7.5em!important;
 		    color: $color-white;
 		    font-weight: 100;
 		    position: absolute;
@@ -752,7 +758,7 @@ footer{
 	.owl-next{
 		outline: none;
 		span{
-			font-size: 10em!important;
+			font-size: 7.5em!important;
 		    color: $color-white;
 		    position: absolute;
 		    font-weight: 100;
@@ -767,6 +773,28 @@ footer{
 }
 .owl-theme .owl-nav [class*=owl-]:hover {
 	background: none!important;
+}
+a#go-top {
+    background: #8b8c82;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 9999999;
+    i{
+    	color: $color-white;
+    	&::before{
+    		content: "\f102";
+		    font-size: 19px;
+		    width: 100%;
+		    position: absolute;
+		    left: 0;
+		    top: 25%;
+		    text-align: center;
+    	}
+    }
 }
 @media (min-width: 992px) {
 	.navbar-expand-lg .navbar-nav {

@@ -1,6 +1,5 @@
 body {
 	overflow-x: hidden;
-	
 }
 
 $main-color: #000000;
@@ -64,7 +63,7 @@ $desktop-width: 1024px;
  } 
 }  
 
-@mixin desktop { @media (min-width: #{$desktop-width}) and (max-width: 1365px) {    //min-width:1024px
+@mixin desktop { @media (min-width: 1360px) {    //min-width:1024px
   @content;  
  } 
 }
@@ -86,7 +85,7 @@ $desktop-width: 1024px;
 					    -moz-transform: rotate(-45deg);
 					    transform: rotate(-45deg);
 					    opacity: 0.7;
-					    text-align: center;
+					    left: 25%;
 					}
 					&::after{
 						width: 50%!important;
@@ -94,7 +93,7 @@ $desktop-width: 1024px;
 					    -moz-transform: rotate(45deg);
 					    transform: rotate(45deg);
 					    opacity: 0.7;
-					    text-align: center;
+					    left: 25%;
 					}	
 				}
 				&::before{
@@ -185,6 +184,9 @@ $desktop-width: 1024px;
 		 	font-size: 30px;
 		 	font-family: 'Gotham Book';
 		 	color:$color-red;
+		 	@include mobile {
+		 		font-size: 26px;
+		 	}
 		}
 	}
 	.main-content{
@@ -192,6 +194,9 @@ $desktop-width: 1024px;
 			max-width: 51em;
 			font-family: 'Gotham Book';
 			margin:auto;
+			@include mobile {
+				max-width: 85%;
+			}
 			p{
 				color:$color-white;
 			}
@@ -208,6 +213,9 @@ $desktop-width: 1024px;
 	background-attachment: fixed;
 	background-size: cover;
 	padding: 190px 0;
+	@include mobile {
+		padding: 90px 0;
+	}
 	
 	.ut-parallax-quote-title{
 		font-family: 'Gotham Book';
@@ -219,6 +227,9 @@ $desktop-width: 1024px;
 		font-size: 30px;
 		line-height: 40px;
 		color:$color-white;
+		@include mobile {
+			max-width: 90%;
+		}
 		ins{
 			background-color: transparent;
     		color: $color-red;
@@ -238,6 +249,9 @@ $desktop-width: 1024px;
 	background:$main-color;
 	padding: 120px 0 60px 0;
 	text-align: center;
+	@include mobile {
+		padding: 80px 0 10px 0!important;
+	}
 	.section-title{
 		span{
 			@include title;
@@ -271,7 +285,15 @@ $desktop-width: 1024px;
 		.wpb_wrapper{
 			margin-top: 35px;
 			ul{
+				@include mobile {
+					padding-left: 0!important;
+				}
 				li{
+					@include mobile {
+						width: 49%;
+						float: none;
+						padding-bottom: 20px;
+					}
 					font-family: 'Gotham Book';
 					text-align: center;
 					width: 20%;
@@ -312,6 +334,9 @@ $desktop-width: 1024px;
 	    line-height: 30px;
 	    color:#6f6a6a;
 	    padding-bottom: 45px;
+	    @include mobile {
+	    	max-width: 90%;
+	    }
 	   	ins{
 	   		color:$color-white!important;
 	   		opacity: 0.9;
@@ -400,28 +425,26 @@ $desktop-width: 1024px;
 		max-width: 600px;
 		margin: auto;
 		.active{
-			list-style-type: none;
-			float: left;
-			display: inline-block;
-			padding: 6px 12px;
 			border: 1px solid #151515!important;
 		    background-color:#151515;
 		    color: $color-white!important;
-		    margin: 0 20px 20px 0;		
-		    font-size: 12px;
-		    font-family: 'Gotham Book';
 		}
 		.item{
 			font-family: 'Gotham Book';
 			list-style-type: none;
 			float: left;
 			display: inline-block;
-			padding: 6px 12px;
+			padding: 10px;
 		    border: 1px solid #7b7676;
 		    color: $color-red;
-		    margin: 0 20px 20px 0;		
+		    margin: 0 13px 20px 0;
+		    line-height: 100%;
 		    font-size: 13px;
 		    transition: all 0.5s;
+		    @include mobile {
+				font-size: 12px;
+				margin: 0 10px 20px 0;
+		    }
 		    &:hover{
 		    	cursor: pointer;
 				border: 1px solid #151515;
@@ -450,6 +473,9 @@ $desktop-width: 1024px;
 .our-clients{
 	padding: 133px 0 100px 0;
 	text-align: center;
+	@include mobile {
+		padding: 55px 0;
+	}
 	.section-title{
 		span {
 			@include title;
@@ -468,6 +494,9 @@ $desktop-width: 1024px;
 	padding: 133px 0 40px 0;
 	background:$main-color;
 	text-align: center;
+	@include mobile {
+		padding: 80px 0 30px;
+	}
 	.section-title{
 		@include title;
 
@@ -480,6 +509,9 @@ $desktop-width: 1024px;
 		    line-height: 30px;
 		    color:#6f6a6a;
 		    padding-bottom: 45px;
+		    @include mobile {
+		    	padding-bottom: 10px;
+		    }
 		   	ins{
 		   		color:$color-white!important;
 		   		opacity: 0.9;
@@ -496,12 +528,30 @@ $desktop-width: 1024px;
 				img{
 					border-radius: 50%;
 					object-fit: cover;
+					@include mobile {
+						max-width: 80%;
+						margin:auto;
+						padding-bottom: 30px;
+					}
+					@include tablet{
+
+					}
 				}
 				
 			}
 			.bklyn-testimonials-quote{
 				margin-left: 40px;
 				height: 26em;
+				@include mobile {
+					margin: 0 10px;
+				    height: auto;
+				    text-align: justify;				
+				}
+				@include tablet {
+					margin: 0 10px;
+				    height: auto;
+				    text-align: justify;				
+				}
 				p{
 					color: #464646;
 				    font-family: Droid Serif;
@@ -509,7 +559,11 @@ $desktop-width: 1024px;
 				    font-style: normal;
 				    font-size: 19px;
 				    line-height: 31px;
+				    @include tablet {
+				    	font-size: 16px;
+				    }
 				}
+
 				.bklyn-about-testimonials-author{
 					.bklyn-testimonials-icon-wrap{
 						.bklyn-testimonials-icon{
@@ -555,6 +609,9 @@ $desktop-width: 1024px;
 	background-attachment: fixed;
 	transform: translate3d(0px, 0px, 0px);
 	padding: 137px 0 200px 0;
+	@include mobile {
+		padding: 90px 0;
+	}
 	.section-title{
 		@include title;
 		color:$color-white;
@@ -567,6 +624,10 @@ $desktop-width: 1024px;
 		    line-height: 30px;
 		    color:$color-white;
 		    padding-bottom: 45px;
+		    @include mobile {
+		    	width: 95%;
+		    	margin: auto;
+		    }
 		   	ins{
 		   		color:$color-red!important;
 		   		opacity: 0.9;
@@ -577,6 +638,9 @@ $desktop-width: 1024px;
 	.contact-form-wrap{
 		text-align: left;
 		.contact__info{
+			@include mobile {
+				margin-bottom: 20px;
+			}
 			.bg-contact__info{
 				background: rgba(0,0,0,0.25);
 				padding: 40px;
@@ -614,12 +678,13 @@ $desktop-width: 1024px;
 						width: 100%;
 						.wpcf7-form-control-wrap{
 							.wpcf7-form-control{
+
 							    border: 1px solid transparent;
 								padding: 7px;
 							    outline: none;
 							    color: #FFFFFF;
 							    margin: 0;
-							    min-width: 100%;
+							    max-width: 100%;
 							    display: block;
 							    vertical-align: baseline;
 							    vertical-align: middle;
@@ -638,6 +703,9 @@ $desktop-width: 1024px;
 							    -webkit-border-radius: 0;
 							    -moz-border-radius: 0;
 							    border-radius: 0;
+							   	@include desktop {
+							    	min-width: 100%!important;
+							    }
 							}
 						}
 					}
@@ -675,6 +743,10 @@ footer{
 		    position: absolute;
 		    left: 0;
 		    bottom: 300px;
+		    @include mobile {
+		    	font-size: 6em!important;
+		    	bottom: 500px;
+		    }
 		}
 	}
 	.owl-next{
@@ -686,6 +758,10 @@ footer{
 		    font-weight: 100;
 		    right: 0;
 		    bottom: 300px;
+		     @include mobile {
+		    	font-size: 6em!important;
+		    	bottom: 500px;
+		    }
 		}
 	}
 }

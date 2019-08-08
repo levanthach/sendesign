@@ -55,10 +55,16 @@ body {
     font-size: 30px;
     font-family: 'Gotham Book';
     color: #8d1a0c; }
+    @media (max-width: 767px) {
+      .about .title-content p {
+        font-size: 26px; } }
   .about .main-content .wpb_wrapper {
     max-width: 51em;
     font-family: 'Gotham Book';
     margin: auto; }
+    @media (max-width: 767px) {
+      .about .main-content .wpb_wrapper {
+        max-width: 85%; } }
     .about .main-content .wpb_wrapper p {
       color: #ffffff; }
   .about .wpb_content_element {
@@ -78,14 +84,14 @@ body {
         -moz-transform: rotate(-45deg);
         transform: rotate(-45deg);
         opacity: 0.7;
-        text-align: center; }
+        left: 25%; }
       .about .wpb_content_element .cta-btn .cl-effect-18:hover::after {
         width: 50% !important;
         -webkit-transform: rotate(45deg);
         -moz-transform: rotate(45deg);
         transform: rotate(45deg);
         opacity: 0.7;
-        text-align: center; }
+        left: 25%; }
       .about .wpb_content_element .cta-btn .cl-effect-18::before {
         content: '';
         position: absolute;
@@ -116,6 +122,9 @@ body {
   background-attachment: fixed;
   background-size: cover;
   padding: 190px 0; }
+  @media (max-width: 767px) {
+    .main-quote {
+      padding: 90px 0; } }
   .main-quote .ut-parallax-quote-title {
     font-family: 'Gotham Book';
     margin-bottom: 0 !important;
@@ -126,6 +135,9 @@ body {
     font-size: 30px;
     line-height: 40px;
     color: #ffffff; }
+    @media (max-width: 767px) {
+      .main-quote .ut-parallax-quote-title {
+        max-width: 90%; } }
     .main-quote .ut-parallax-quote-title ins {
       background-color: transparent;
       color: #8d1a0c;
@@ -140,6 +152,9 @@ body {
   background: #000000;
   padding: 120px 0 60px 0;
   text-align: center; }
+  @media (max-width: 767px) {
+    .our-services {
+      padding: 80px 0 10px 0 !important; } }
   .our-services .section-title span {
     font-family: Libe;
     font-size: 50px;
@@ -170,6 +185,9 @@ body {
     image-rendering: -webkit-optimize-contrast; }
   .our-services .services-list-item .wpb_wrapper {
     margin-top: 35px; }
+    @media (max-width: 767px) {
+      .our-services .services-list-item .wpb_wrapper ul {
+        padding-left: 0 !important; } }
     .our-services .services-list-item .wpb_wrapper ul li {
       font-family: 'Gotham Book';
       text-align: center;
@@ -181,6 +199,11 @@ body {
       text-transform: uppercase;
       font-weight: 700;
       padding-bottom: 100px; }
+      @media (max-width: 767px) {
+        .our-services .services-list-item .wpb_wrapper ul li {
+          width: 49%;
+          float: none;
+          padding-bottom: 20px; } }
       .our-services .services-list-item .wpb_wrapper ul li img {
         max-width: 100%; }
   .our-services .video-services-iframe embed {
@@ -209,6 +232,9 @@ body {
     line-height: 30px;
     color: #6f6a6a;
     padding-bottom: 45px; }
+    @media (max-width: 767px) {
+      .our-work .lead {
+        max-width: 90%; } }
     .our-work .lead ins {
       color: #ffffff !important;
       opacity: 0.9;
@@ -282,27 +308,25 @@ body {
     max-width: 600px;
     margin: auto; }
     .galery-image .list-button .active {
-      list-style-type: none;
-      float: left;
-      display: inline-block;
-      padding: 6px 12px;
       border: 1px solid #151515 !important;
       background-color: #151515;
-      color: #ffffff !important;
-      margin: 0 20px 20px 0;
-      font-size: 12px;
-      font-family: 'Gotham Book'; }
+      color: #ffffff !important; }
     .galery-image .list-button .item {
       font-family: 'Gotham Book';
       list-style-type: none;
       float: left;
       display: inline-block;
-      padding: 6px 12px;
+      padding: 10px;
       border: 1px solid #7b7676;
       color: #8d1a0c;
-      margin: 0 20px 20px 0;
+      margin: 0 13px 20px 0;
+      line-height: 100%;
       font-size: 13px;
       transition: all 0.5s; }
+      @media (max-width: 767px) {
+        .galery-image .list-button .item {
+          font-size: 12px;
+          margin: 0 10px 20px 0; } }
       .galery-image .list-button .item:hover {
         cursor: pointer;
         border: 1px solid #151515; }
@@ -329,14 +353,14 @@ body {
         -moz-transform: rotate(-45deg);
         transform: rotate(-45deg);
         opacity: 0.7;
-        text-align: center; }
+        left: 25%; }
       .service-continue .wpb_content_element .cta-btn .cl-effect-18:hover::after {
         width: 50% !important;
         -webkit-transform: rotate(45deg);
         -moz-transform: rotate(45deg);
         transform: rotate(45deg);
         opacity: 0.7;
-        text-align: center; }
+        left: 25%; }
       .service-continue .wpb_content_element .cta-btn .cl-effect-18::before {
         content: '';
         position: absolute;
@@ -365,6 +389,9 @@ body {
 .our-clients {
   padding: 133px 0 100px 0;
   text-align: center; }
+  @media (max-width: 767px) {
+    .our-clients {
+      padding: 55px 0; } }
   .our-clients .section-title span {
     font-family: Libe;
     font-size: 50px;
@@ -385,6 +412,9 @@ body {
   padding: 133px 0 40px 0;
   background: #000000;
   text-align: center; }
+  @media (max-width: 767px) {
+    .our-team {
+      padding: 80px 0 30px; } }
   .our-team .section-title {
     font-family: Libe;
     font-size: 50px;
@@ -403,6 +433,9 @@ body {
     line-height: 30px;
     color: #6f6a6a;
     padding-bottom: 45px; }
+    @media (max-width: 767px) {
+      .our-team .lead p {
+        padding-bottom: 10px; } }
     .our-team .lead p ins {
       color: #ffffff !important;
       opacity: 0.9;
@@ -414,9 +447,24 @@ body {
     .our-team .ut-bkly-qt-slide .bkly-testimonials-style2 .bklyn-testimonials-avatar img {
       border-radius: 50%;
       object-fit: cover; }
+      @media (max-width: 767px) {
+        .our-team .ut-bkly-qt-slide .bkly-testimonials-style2 .bklyn-testimonials-avatar img {
+          max-width: 80%;
+          margin: auto;
+          padding-bottom: 30px; } }
     .our-team .ut-bkly-qt-slide .bkly-testimonials-style2 .bklyn-testimonials-quote {
       margin-left: 40px;
       height: 26em; }
+      @media (max-width: 767px) {
+        .our-team .ut-bkly-qt-slide .bkly-testimonials-style2 .bklyn-testimonials-quote {
+          margin: 0 10px;
+          height: auto;
+          text-align: justify; } }
+      @media (min-width: 768px) and (max-width: 1023px) {
+        .our-team .ut-bkly-qt-slide .bkly-testimonials-style2 .bklyn-testimonials-quote {
+          margin: 0 10px;
+          height: auto;
+          text-align: justify; } }
       .our-team .ut-bkly-qt-slide .bkly-testimonials-style2 .bklyn-testimonials-quote p {
         color: #464646;
         font-family: Droid Serif;
@@ -424,6 +472,9 @@ body {
         font-style: normal;
         font-size: 19px;
         line-height: 31px; }
+        @media (min-width: 768px) and (max-width: 1023px) {
+          .our-team .ut-bkly-qt-slide .bkly-testimonials-style2 .bklyn-testimonials-quote p {
+            font-size: 16px; } }
       .our-team .ut-bkly-qt-slide .bkly-testimonials-style2 .bklyn-testimonials-quote .bklyn-about-testimonials-author .bklyn-testimonials-icon-wrap .bklyn-testimonials-icon img {
         width: 32px;
         height: 32px;
@@ -458,14 +509,14 @@ body {
           -moz-transform: rotate(-45deg);
           transform: rotate(-45deg);
           opacity: 0.7;
-          text-align: center; }
+          left: 25%; }
         .our-team .ut-bkly-qt-slide .wpb_content_element .cta-btn .cl-effect-18:hover::after {
           width: 50% !important;
           -webkit-transform: rotate(45deg);
           -moz-transform: rotate(45deg);
           transform: rotate(45deg);
           opacity: 0.7;
-          text-align: center; }
+          left: 25%; }
         .our-team .ut-bkly-qt-slide .wpb_content_element .cta-btn .cl-effect-18::before {
           content: '';
           position: absolute;
@@ -498,6 +549,9 @@ body {
   background-attachment: fixed;
   transform: translate3d(0px, 0px, 0px);
   padding: 137px 0 200px 0; }
+  @media (max-width: 767px) {
+    .we-are-form {
+      padding: 90px 0; } }
   .we-are-form .section-title {
     font-family: Libe;
     font-size: 50px;
@@ -517,12 +571,19 @@ body {
     line-height: 30px;
     color: #ffffff;
     padding-bottom: 45px; }
+    @media (max-width: 767px) {
+      .we-are-form .lead p {
+        width: 95%;
+        margin: auto; } }
     .we-are-form .lead p ins {
       color: #8d1a0c !important;
       opacity: 0.9;
       text-decoration: none; }
   .we-are-form .contact-form-wrap {
     text-align: left; }
+    @media (max-width: 767px) {
+      .we-are-form .contact-form-wrap .contact__info {
+        margin-bottom: 20px; } }
     .we-are-form .contact-form-wrap .contact__info .bg-contact__info {
       background: rgba(0, 0, 0, 0.25);
       padding: 40px;
@@ -558,7 +619,7 @@ body {
             outline: none;
             color: #FFFFFF;
             margin: 0;
-            min-width: 100%;
+            max-width: 100%;
             display: block;
             vertical-align: baseline;
             vertical-align: middle;
@@ -577,6 +638,9 @@ body {
             -webkit-border-radius: 0;
             -moz-border-radius: 0;
             border-radius: 0; }
+            @media (min-width: 1360px) {
+              .we-are-form .contact-form-wrap .contact__form .bg-contact__form p label .wpcf7-form-control-wrap .wpcf7-form-control {
+                min-width: 100% !important; } }
 
 footer {
   background: #000000;
@@ -601,6 +665,10 @@ footer {
     position: absolute;
     left: 0;
     bottom: 300px; }
+    @media (max-width: 767px) {
+      .owl-nav .owl-prev span {
+        font-size: 6em !important;
+        bottom: 500px; } }
 .owl-nav .owl-next {
   outline: none; }
   .owl-nav .owl-next span {
@@ -610,6 +678,10 @@ footer {
     font-weight: 100;
     right: 0;
     bottom: 300px; }
+    @media (max-width: 767px) {
+      .owl-nav .owl-next span {
+        font-size: 6em !important;
+        bottom: 500px; } }
 
 .owl-theme .owl-nav [class*=owl-]:hover {
   background: none !important; }

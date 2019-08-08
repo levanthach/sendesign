@@ -29,17 +29,64 @@ body {
   font-family: 'raleway';
   text-transform: uppercase; }
 
-#demo {
-  margin-top: 83px; }
-  #demo .carousel-inner .carousel-item img {
-    width: 100%;
-    height: 500px;
-    object-fit: cover; }
+.slider {
+  position: relative; }
+  .slider .text-slider {
+    position: absolute;
+    z-index: 9999999;
+    left: 10%;
+    top: 30%; }
+    .slider .text-slider .hero-description {
+      font-family: Gotham;
+      font-size: 12px;
+      color: #ffffff; }
+    .slider .text-slider .ut-word-rotator {
+      font-family: Libe;
+      font-size: 80px;
+      margin-left: 15px;
+      color: #ffffff; }
+      .slider .text-slider .ut-word-rotator span {
+        color: #8d1a0c; }
+      .slider .text-slider .ut-word-rotator::before {
+        content: '';
+        width: 3px;
+        height: 100px;
+        background: #ffffff;
+        position: absolute;
+        top: 30px;
+        left: 0;
+        margin-right: 30px; }
+      .slider .text-slider .ut-word-rotator::after {
+        content: '';
+        width: 3px;
+        height: 100px;
+        background: #ffffff;
+        position: absolute;
+        top: 30px;
+        right: -15px; }
+    .slider .text-slider .hero-btn-holder {
+      display: block;
+      margin-top: 20px;
+      border: 2px solid white;
+      width: 110px;
+      background: #000000; }
+      .slider .text-slider .hero-btn-holder a {
+        font-weight: boild;
+        color: #ffffff;
+        padding: 0.8em 1em;
+        font-size: 12px;
+        font-family: sans-serif;
+        text-align: center;
+        display: inline-block;
+        text-decoration: none; }
 
 .about {
   padding: 10px 0 100px 0;
   text-align: center;
   background: #000000; }
+  @media (max-width: 767px) {
+    .about .section-title {
+      margin-top: 100px; } }
   .about .section-title span {
     font-family: Libe;
     font-size: 50px;
@@ -328,7 +375,12 @@ body {
       @media (max-width: 767px) {
         .galery-image .list-button .item a {
           font-size: 12px;
-          margin: 0 10px 20px 0; } }
+          margin: 0 10px 20px 0;
+          margin: 0 10px 10px 11px;
+          width: 38.5vw;
+          display: inline;
+          float: left;
+          height: 40px; } }
       .galery-image .list-button .item a:hover {
         cursor: pointer;
         border: 1px solid #151515; }
@@ -708,9 +760,31 @@ a#go-top {
       top: 25%;
       text-align: center; }
 
+.load {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100000000000;
+  display: block;
+  overflow: hidden; }
+  .load img {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -75px;
+    margin-left: -75px; }
+
 @media (min-width: 992px) {
   .navbar-expand-lg .navbar-nav {
     position: absolute;
     left: 65%; } }
+@media (min-width: 1024px) and (max-width: 1359px) {
+  .navbar-expand-lg .navbar-nav {
+    left: 52%; } }
 
 /*# sourceMappingURL=style.css.map */

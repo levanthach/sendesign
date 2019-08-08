@@ -1,4 +1,24 @@
-﻿$('.owl-carousel').owlCarousel({
+﻿$('.owl-carousel.owl-slider').owlCarousel({
+    loop:true,
+    margin:10,
+    dots:false,
+    animateOut: 'fadeOut',
+    autoplay: true,
+    nav:false,
+    autoplayTimeout:3000,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
+})
+$('.owl-carousel').owlCarousel({
     loop:true,
     margin:10,
     dots:false,
@@ -17,8 +37,14 @@
         }
     }
 })
+
 // scroll top
 $(document).ready(function(){
+    var typed = new Typed('#typist-element', {
+        strings: ["San Design", "Creative Lover", "Blogger", "Photographer", "Writer"],
+        typeSpeed: 150,
+        loop:true
+    });
     // hide #go-top first
     $("#go-top").hide();
  
@@ -42,8 +68,13 @@ $(document).ready(function(){
     });
 
    //tab
-    $(".nav-tabs li").click(function(){
+    $(".nav-pill a").click(function(){
         $(this).tab('show');
+    });
+
+    $(window).on('load', function(event) {
+        $('.load').delay(1000).fadeOut('fast');
+        $('.loader').delay(500).fadeOut('fast');
     });
  
 });

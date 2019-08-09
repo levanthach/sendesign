@@ -567,8 +567,10 @@ $desktop-width: 1024px;
 	}
 	.client-img{
 		img{
-			max-width: 100%;
 			width: 20%;
+			@include mobile {
+				width: 100%!important;
+			}
 		}
 	}
 } //end our-clients

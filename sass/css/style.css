@@ -472,8 +472,10 @@ body {
       height: 2px;
       margin: 15px auto 0; }
   .our-clients .client-img img {
-    max-width: 100%;
     width: 20%; }
+    @media (max-width: 767px) {
+      .our-clients .client-img img {
+        width: 100% !important; } }
 
 .our-team {
   padding: 133px 0 40px 0;
